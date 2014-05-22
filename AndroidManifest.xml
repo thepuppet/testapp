@@ -23,8 +23,7 @@
      supplies a unique name for the application.  When writing your
      own application, the package name must be changed from "pablodeleo.me.*"
      to come from a domain that you own or have control over. -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-                package="mariodeleo.it.android.home">
+<manifest>
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
