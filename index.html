@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" charset="utf-8" src="phonegap.0.9.6.min.js"></script>
+<script type="text/javascript" language="javascript" src="jquery.js"></script>
+<script type="text/javascript" language="javascript" src="jquery-ui.js"></script>
+<script type="text/javascript" language="javascript" src="test.js"></script>
+<script>
+	// If you want to prevent dragging, uncomment this section
+	/*
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	*/
+	
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	/*
+	function handleOpenURL(url)
+	{
+		// TODO: do something with the url passed in.
+	}
+	*/
+	
+	function onBodyLoad()
+	{		
+		document.addEventListener("deviceready",onDeviceReady,false);
+		//document.getElementById('search_key_trigger').addEventListener('touchstart', perform_ajax_call, false);
+	}
+	
+	/* When this function is called, PhoneGap has been initialized and is ready to roll */
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	
+	function onDeviceReady()
+	{
+		
+		// do your thing!
+		//navigator.notification.alert("PhoneGap is working")
+		
+		
+	}
+	
+	</script>
+<style type="text/css">
+	BODY, HTML{
+	padding:0 !important;
+	margin:0 !important;
+	padding:0px !important;
+	margin:0px !important;
+	}
+	.square{
+	display:block;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background-color:#0099CC;
+	text-align:center;
+	color:#FFFFFF;
+	/*font-size:0px;
+	line-height:0px;*/
+	border:none;
+	z-index:1;
+	}
+	.blank{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background-color:#CCCCCC;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:0px;
+	line-height:0px;
+	border:none;
+	}
+	
+	#wrap{
+	width:300px;
+	height:300px;
+	margin:0px auto;
+	padding:10px;
+	position:relative;
+	}
+	</style>
+</head>
+
+<body>
+<div id="wrap"></div>
+</body>
+</html>
